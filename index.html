@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="preload"></div>
     <nav id="navigation">
         <a id="home" href="#introo">
             <h3 class="navtext">Home</h3>&nbsp &nbsp <img class="icon" src="resources/house.png" alt="#">
@@ -150,6 +151,15 @@
         
 
     </div>
+    <script>
+        var loader=document.getElementById("preload");
+        var val=document.getElementById("container");
+        window.addEventListener("load",function()
+        {
+            loader.style.display="none";
+            val.classList.remove("display");
+        });
+    </script>
 
 </body>
 
