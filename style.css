@@ -547,13 +547,11 @@ color: red;
    background-position: center;
    background-size: 15%;
    background-repeat: no-repeat;
-   
-
    width: 100vw;
    height: 100vh;
 }
-.display{
-    display:none;
+.diplay{
+    display: none;
 }
 
 
