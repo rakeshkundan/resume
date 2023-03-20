@@ -164,8 +164,11 @@
         var loader = document.getElementById("preload");
         var val = document.getElementById("container");
         window.addEventListener("load", function () {
-            loader.style.display = "none";
-            val.classList.remove("display");
+            setTimeout(() => {
+                loader.style.display = "none";
+                val.classList.remove("display");ß
+            }, 500);
+
         });
 
     </script>
