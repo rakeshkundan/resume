@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="myfun()">
 
     <div id="preload"></div>
     <div id="container" class="display">
@@ -161,15 +161,24 @@
 
     </div>
     <script>
-        var loader = document.getElementById("preload");
-        var val = document.getElementById("container");
-        window.addEventListener("load", function () {
-            setTimeout(() => {
-                loader.style.display = "none";
-                val.classList.remove("display");ß
-            }, 1000);
 
-        });
+        // var loader = document.getElementById("preload");
+        // var val = document.getElementById("container");
+        // window.addEventListener("load", function () {
+        //     setTimeout(() => {
+        //         loader.style.display = "none";
+        //         val.classList.remove("display"); 
+        //     }, 1000);
+
+        // });
+
+
+
+        function myfun() {
+            document.getElementById("preload").remove()
+            var val = document.getElementById("container");
+            val.classList.remove("display");
+        }
 
     </script>
 
