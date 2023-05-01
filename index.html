@@ -175,9 +175,11 @@
 
 
         function myfun() {
-            document.getElementById("preload").remove()
-            var val = document.getElementById("container");
-            val.classList.remove("display");
+            setTimeout(() => {
+                document.getElementById("preload").remove()
+                var val = document.getElementById("container");
+                val.classList.remove("display");
+            }, 1000);
         }
 
     </script>
